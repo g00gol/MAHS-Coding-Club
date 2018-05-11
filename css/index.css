@@ -1,0 +1,248 @@
+/*Body*/
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+
+
+
+
+/*Background Image*/
+.background-img {
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  position: fixed;
+  background-size: cover;
+  /*Safari*/
+  -webkit-animation-name: background-img;
+  /*Safari*/
+  -webkit-animation-duration: 12s;
+  animation-name: background-img;
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+}
+
+/*Safari*/
+@-webkit-keyframes background-img {
+  0% {
+    background-image: url(MAHS-Coding-Club/images/codingPicture1.jpg);
+  }
+  25% {
+    background-image: url(MAHS-Coding-Club/images/codingPicture1.jpg);
+  }
+  50% {
+    background-image: url(MAHS-Coding-Club/images/codingClass.jpg);
+  }
+  75% {
+    background-image: url(MAHS-Coding-Club/images/codingPicture2.jpg);
+  }
+  100% {
+    background-image: url(MAHS-Coding-Club/images/codingClass3.jpg);
+  }
+}
+
+@keyframes background-img {
+  0% {
+    background-image: url(MAHS-Coding-Club/images/codingPicture1.jpg);
+  }
+  25% {
+    background-image: url(MAHS-Coding-Club/images/codingPicture1.jpg);
+  }
+  50% {
+    background-image: url(MAHS-Coding-Club/images/codingClass.jpg);
+  }
+  75% {
+    background-image: url(MAHS-Coding-Club/images/codingPicture2.jpg);
+  }
+  100% {
+    background-image: url(MAHS-Coding-Club/images/codingClass3.jpg);
+  }
+}
+
+
+
+
+
+/*Navigation*/
+.nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 24%;
+  background-color: rgba(0, 0, 0, 0.9);
+  height: 100%;
+  position: fixed;
+  overflow: auto;
+  z-index: 100;
+}
+
+.nav ul li a {
+  text-align: right;
+  display: block;
+  color: white;
+  font-family: 'bgBold', arial, helvetica, sans-serif;
+  padding: 18px 16px;
+  text-decoration: none;
+  font-size: 1.6vw;
+}
+
+.nav ul li a:hover {
+  color: #0df904;
+}
+
+.nav ul li a:active {
+  color: #09d602;
+}
+
+.nav ul .current {
+  background-color: #5037a3;
+  -webkit-animation-name: current;
+  /*Safari*/
+  -webkit-animation-duration: 2s;
+  /*Safari*/
+  animation-name: current;
+  animation-duration: 2s;
+}
+
+/*Safari*/
+
+@-webkit-keyframes current {
+  from {
+    background-color: #6445d1;
+  }
+  to {
+    background-color: #5037a3;
+  }
+}
+
+@keyframes current {
+  from {
+    background-color: #6445d1;
+  }
+  to {
+    background-color: #5037a3;
+  }
+}
+
+
+
+
+
+/*Welcome Message*/
+.welcome {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  margin-left: 24%;
+  z-index: 100;
+}
+
+.welcome h1 {
+  position: fixed;
+  left: 29%;
+  font-size: 4.5vw;
+  color: white;
+  top: 15%;
+  font-family: 'Courier', sans-serif;
+}
+
+.welcome .img {
+  width: 20%;
+  height: 25%;
+  background-image: url(MAHS-Coding-Club/images/icons/codingLogo1.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: fixed;
+  left: 50%;
+  top: 30%;
+  z-index: 90;
+}
+
+
+
+
+
+/*Overlay*/
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 99
+}
+
+
+
+
+
+/*Footer*/
+.footer {
+  width: 24%;
+  height: 100%;
+  display: inline-block;
+  position: fixed;
+  top: 90%;
+  bottom: 5%;
+  z-index: 101;
+}
+
+.footer img {
+  padding: 5px;
+  max-width: 50vw;
+  max-height: 50vw;
+}
+
+/*Tooltip*/
+.discordTooltip {
+  visibility: hidden;
+  width: 100px;
+  background-color: rgba(147, 112, 219, 0.4);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  font-family: 'bgBold', arial, helvetica, sans-serif;
+}
+
+.facebookTooltip {
+  visibility: hidden;
+  width: 100px;
+  background-color: rgba(0, 0, 255, 0.4);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  font-family: 'bgBold', arial, helvetica, sans-serif;
+}
+
+.twitterTooltip {
+  visibility: hidden;
+  width: 100px;
+  background-color: rgba(0, 191, 255, 0.4);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  font-family: 'bgBold', arial, helvetica, sans-serif;
+}
+
+.footer a:hover .discordTooltip {
+  visibility: visible;
+}
+
+.footer a:hover .facebookTooltip {
+  visibility: visible;
+}
+
+.footer a:hover .twitterTooltip {
+  visibility: visible;
+}
